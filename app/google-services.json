@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76883543370",
+    "firebase_url": "https://teacherpresent-9bcfe.firebaseio.com",
+    "project_id": "teacherpresent-9bcfe",
+    "storage_bucket": "teacherpresent-9bcfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76883543370:android:c6504e9b3ca86ea3",
+        "android_client_info": {
+          "package_name": "com.example.android.teacherpresent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76883543370-a5rd452bjveoun0elpv32nvdjej5b5he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBClEe7OW0CO7a8umz_B-AW-9uHCCWQbwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76883543370-a5rd452bjveoun0elpv32nvdjej5b5he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
