@@ -136,6 +136,10 @@ public class MainGenerate extends AppCompatActivity {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         return sdf.format(new Date());
     }
+    String getDate() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:YYYY");
+        return sdf.format(new Date());
+    }
 
     public TextView textView(String message, int color) {
         if (null == message || message.trim().isEmpty()) {
@@ -232,6 +236,7 @@ public class MainGenerate extends AppCompatActivity {
                         showMessage("Client : " + read, greenColor);
                         break;
                     }
+                    //Store the following read string to database
                     showMessage("Client : " + read, greenColor);
                 } catch (IOException e) {
                     e.printStackTrace();
