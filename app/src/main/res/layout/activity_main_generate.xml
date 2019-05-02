@@ -19,21 +19,41 @@
         android:layout_above="@+id/text"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="175dp"
+        android:layout_marginEnd="74dp"
         android:layout_marginRight="175dp"
         android:layout_marginBottom="-29dp"
-        android:autofillHints="Course"
+        android:autofillHints="Course Name"
         android:spinnerMode="dropdown"
         >
 
     </Spinner>
 
-    <EditText
+    <Spinner
+        android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="-29dp"
+        android:autofillHints="Course ID"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:hint="IP Address"
-        android:id="@+id/text"/>
+        android:id="@+id/text"
+        android:textSize="20dp"/>
+
+
 
 
     <Button
@@ -42,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="154dp"
         android:layout_marginRight="154dp"
         android:text="Generate" />
@@ -51,10 +71,10 @@
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="530dp"
-        android:layout_marginLeft="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="154dp"
+        android:layout_below="@+id/records"
         android:layout_weight="1"
 
         android:text="Logout" />
@@ -62,21 +82,24 @@
         android:id="@+id/records"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="570dp"
-        android:layout_marginLeft="200dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginEnd="154dp"
         android:layout_weight="1"
+        android:text="Records"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="114dp"/>
+    <!--android:layout_marginTop="570dp"-->
+        <!--android:layout_marginLeft="200dp"-->
+        <!--android:layout_marginEnd="154dp"-->
 
-        android:text="Records" />
 
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="155dp"
+        android:layout_below="@+id/gen_btn"
+        android:layout_marginTop="7dp"
         android:background="@android:color/black" />
 
     <LinearLayout
@@ -84,16 +107,44 @@
         android:layout_height="283dp"
         android:layout_below="@+id/view"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="67dp">
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_alignStart="@+id/null" />
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Text"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/QRText"
+            />
     </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="7dp">
 
+        <LinearLayout
+            android:id="@+id/msgList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 
